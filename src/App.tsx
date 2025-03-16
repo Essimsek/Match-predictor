@@ -1,8 +1,8 @@
 import { Outlet } from "@tanstack/react-router"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Switch } from "@mui/material";
 import { useState, useMemo } from "react";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -24,9 +24,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <nav>
-           <Switch onChange={handleThemeChange} checked={mode === "dark"}/>
-        </nav>
+        <Navbar onThemeChange={handleThemeChange} mode={mode}/>
         <Outlet />
       </ThemeProvider>
     </>
