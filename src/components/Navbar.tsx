@@ -6,6 +6,12 @@ type NavbarProps = {
     mode: "light" | "dark";
 }
 
+const Seperator = () => {
+    return (
+        <div className="w-full h-1 bg-gradient-to-r from-blue-600 to-purple-500" />
+    );
+}
+
 const Navbar = ({ onThemeChange, mode }: NavbarProps) => {
     return (
         <nav className="container flex flex-row justify-between items-center p-4 mx-auto">
@@ -20,3 +26,4 @@ const Navbar = ({ onThemeChange, mode }: NavbarProps) => {
 }
 
 export default Navbar;
+export {Seperator};
