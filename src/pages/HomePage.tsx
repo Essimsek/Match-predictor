@@ -36,7 +36,7 @@ const HomePage = () => {
             />
             {/* predictions card */}
           </div>
-          <p className="mt-12 text-sm text-gray-500 dark:text-gray-400">
+          <p className="mt-12 text-sm text-gray-500 text-center dark:text-gray-400">
             Data updated in real-time • Let the AI predict the results for you
           </p>
         </div>
