@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend   # Frontend Dockerfile'ın yolu
+    ports:
+      - "5173:5173"    # Host:Container port eşleme
+    volumes:
+      - ./frontend:/app  # Kod değişikliklerini anında yansıt
+      - /app/node_modules # Host'un node_modules'ini ezme
+    environment:
+      - NODE_ENV=development
