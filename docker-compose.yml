@@ -2,11 +2,29 @@ version: '3.8'
 
 services:
   frontend:
-    build: ./frontend   # Frontend Dockerfile'ın yolu
+    build:
+      context: ./frontend
+      # Use target: development when you add multiple stages
     ports:
-      - "5173:5173"    # Host:Container port eşleme
+      - "5173:5173"
     volumes:
-      - ./frontend:/app  # Kod değişikliklerini anında yansıt
-      - /app/node_modules # Host'un node_modules'ini ezme
+      - ./frontend:/app
+      - /app/node_modules
     environment:
       - NODE_ENV=development
+    networks:
+      - my-network
+
+# Add this when you have backend
+#  backend:
+#    build: ./backend
+#    ports:
+#      - "3000:3000"
+#    environment:
+#      - NODE_ENV=development
+#    networks:
+#      - my-network
+
+networks:
+  my-network:
+    driver: bridge
