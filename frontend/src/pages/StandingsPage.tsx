@@ -1,3 +1,5 @@
+// get the standings data from api
+
 const StandingsPage = () => {
     return (
         <div>
