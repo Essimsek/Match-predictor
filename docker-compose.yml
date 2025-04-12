@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   frontend:
     build:
@@ -15,15 +13,28 @@ services:
     networks:
       - my-network
 
-# Add this when you have backend
-#  backend:
-#    build: ./backend
-#    ports:
-#      - "3000:3000"
-#    environment:
-#      - NODE_ENV=development
-#    networks:
-#      - my-network
+  backend:
+    build: ./backend/express-ts-backend
+
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=development
+      - FLASK_BACKEND_URL=http://flask-backend:5000
+    networks:
+      - my-network
+
+  flask-backend:
+    build: ./backend/pytholask
+
+    expose:
+      - "5000"
+    environment:
+      - FLASK_ENV=development
+    networks:
+      - my-network
 
 networks:
   my-network:

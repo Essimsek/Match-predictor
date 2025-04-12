@@ -26,9 +26,9 @@ def get_standings() -> list:
     return standings
 
 @app.route("/api-flask/standings", methods=["GET"])
-def hello_world():
+def standings():
     standings = get_standings()
     return jsonify(standings)
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=False, host="0.0.0.0", port=5000)
