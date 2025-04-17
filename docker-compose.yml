@@ -11,12 +11,15 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
+    
+    depends_on:
+      - backend
     networks:
       - my-network
 
   backend:
     build: ./backend/express-ts-backend
-
+    
     ports:
       - "3000:3000"
     expose:
@@ -24,6 +27,8 @@ services:
     environment:
       - NODE_ENV=development
       - FLASK_BACKEND_URL=http://flask-backend:5000
+    depends_on:
+      - flask-backend
     networks:
       - my-network
 

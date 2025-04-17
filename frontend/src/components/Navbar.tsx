@@ -23,7 +23,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="container flex flex-row justify-between items-center p-7 mx-24 sticky top-0 z-10 bg-white dark:bg-gray-900 border-b dark:border-gray-700 transition-colors duration-300">
+    <nav className="container flex flex-row justify-between items-center p-7 mx-auto sticky top-0 z-10 bg-white dark:bg-gray-900 border-b dark:border-gray-700 transition-colors duration-300">
       <div className="flex order-1">
         <button
           onClick={handleChengeMode}
