@@ -1,6 +1,6 @@
 const FixturesPage = () => {
     return (
-        <div>
+        <div className="h-screen p-5">
             Hello "/fixtures"!
         </div>
     );
