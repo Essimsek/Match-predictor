@@ -1,6 +1,5 @@
-// get the standings data from api
-import axios from "axios";
 import { useEffect, useState } from "react";
+import api from "../api/api";
 
 type Standings = {
     team: string;
@@ -14,7 +13,7 @@ const StandingsPage = () => {
     useEffect(() => {
         const fetchStandings = async () => {
             try {
-                const response = await axios.get<Standings[]>("http://localhost:3000/api/standings");
+                const response = await api.get<Standings[]>("/standings");
                 setStandings(response.data);
             }
             catch (error) {
@@ -26,7 +25,7 @@ const StandingsPage = () => {
     return (
         <div className="h-screen p-5">
             {standings.map((standing, index) => (
-                <h1 key={index}>{standing.team}</h1>
+                <h1 className="dark:text-white text-blue-500" key={index}>{standing.team}</h1>
             ))}
         </div>
     );
