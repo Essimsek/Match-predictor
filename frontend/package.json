@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.7",
     "@tailwindcss/vite": "^4.0.14",
+    "@tanstack/react-query": "^5.74.4",
     "@tanstack/react-router": "^1.114.17",
     "@types/axios": "^0.9.36",
     "axios": "^1.8.4",

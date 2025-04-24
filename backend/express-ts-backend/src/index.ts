@@ -20,7 +20,8 @@ app.use(cors({
 
 app.get('/api/standings', async (req: Request, res: Response) => {
     const response = await axios.get (`${flaskBackendUrl}/api-flask/standings`);
-    const data = response.data;
+    const data = await response.data;
+    console.log("Standings data: ", data);
     res.json(data);
 });
 
