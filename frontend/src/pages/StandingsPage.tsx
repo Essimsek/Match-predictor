@@ -8,10 +8,17 @@ type Standings = {
     position: string;
 }
 
-const TeamCard = ({ team, points, position, logo }: Standings) => { 
+const TeamCard = ({ team, points, position, logo }: Standings) => {
+    const teamPosition = parseInt(position);
+    let borderClass = "border-l-gray-100/50"
+    if (teamPosition == 1) borderClass ="border-l-blue-500"
+    else if (teamPosition == 2) borderClass ="border-l-[#FA7B17]"
+    else if (teamPosition == 3) borderClass ="border-l-[#34A853]"
+    else if (teamPosition == 4) borderClass ="border-l-[#24C1E0]"
+    else if (19 - teamPosition < 4) borderClass = "border-l-red-500" // last 4 team's border color should be red
     return (
-        <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/50 
-                       border-b border-gray-200 dark:border-gray-700 last:border-0 transition-colors">
+        <div className={`flex items-center justify-between p-4 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/50 
+                       border-b border-b-gray-100 transition-colors border-l-[3px] ${borderClass}`}>
             <div className="flex items-center gap-4 w-full">
                 <span className="text-gray-500 dark:text-gray-400 font-medium w-8 text-center">
                     {position}
@@ -21,7 +28,7 @@ const TeamCard = ({ team, points, position, logo }: Standings) => {
                     <img 
                         src={logo} 
                         alt={`${team} logo`} 
-                        className="w-4 h-4 object-contain" 
+                        className="w-4 h-4 object-contain"
                     />
                     <h3 className="font-medium text-gray-800 dark:text-gray-200">
                         {team}
