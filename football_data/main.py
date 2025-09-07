@@ -3,6 +3,7 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import GridSearchCV, TimeSeriesSplit
 import numpy as np
+import joblib
 
 # replace the result with points
 def result_to_points(ftr, team, home_team, away_team):
@@ -153,8 +154,32 @@ accuracy = accuracy_score(y_test, y_pred_on_test)
 report = classification_report(y_test, y_pred_on_test, target_names=["Draw", "Home Win", "Away Win"], zero_division=0)
 
 print(f"Real Accuracy on the Test Set: {accuracy:.2f}")
-print("Predicted Class Probabilities (first 5 rows):\n", y_pred_prob_on_test[:20])
+print("Predicted Class Probabilities (first 5 rows):\n", y_pred_prob_on_test[:5])
 print("Classification Report:\n", report)
+
+# okay now we can train the final model on the entire dataset using the best parameters found
+print("\n--- Training Final Model on Entire Dataset ---")
+final_model = XGBClassifier(**grid_search.best_params_, eval_metric="mlogloss", random_state=42)
+final_model.fit(X, y)
+
+# --- SAVE THE FINAL MODEL AND NECESSARY ASSETS ---
+# 1. Save the final trained model to a file
+model_filename = 'final_superlig_model.joblib'
+joblib.dump(final_model, model_filename)
+print(f"\nFinal model saved to {model_filename}")
+
+# 2. Bundle all history dictionaries into a single object for convenience
+prediction_assets = {
+    'team_form_history': team_form,
+    'h2h_history': h2h_history,
+    'home_match_history': home_history,
+    'away_match_history': away_history
+}
+
+# 3. Save the assets object to a file
+assets_filename = 'prediction_assets.joblib'
+joblib.dump(prediction_assets, assets_filename)
+print(f"Prediction assets saved to {assets_filename}")
 
 
 # convert time to a format that can be used which is decimal hour here.
@@ -210,4 +235,4 @@ print("Classification Report:\n", report)
 # print(f"Length of the data: {len(data)}")
 
 # create new csv file with the necessary features
-#data.to_csv('./superlig_2023_2025_cleaned.csv', index=False)
+#data.to_csv('./superlig_2023_2025_cleaned.csv', index=False)5
