@@ -19,6 +19,9 @@ services:
 
   backend:
     build: ./backend/express-ts-backend
+    volumes:
+    - ./backend/express-ts-backend:/app       # Mount local code
+    - /app/node_modules
     
     ports:
       - "3000:3000"
