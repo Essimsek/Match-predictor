@@ -1,8 +1,11 @@
 import joblib
 import numpy as np
+from xgboost import XGBClassifier
+
 
 # --- LOAD THE SAVED MODEL AND ASSETS ---
-model = joblib.load('final_superlig_model.joblib')
+model = XGBClassifier()
+model.load_model('final_superlig_model.json')
 assets = joblib.load('prediction_assets.joblib')
 
 # Unpack the history dictionaries from the loaded assets
