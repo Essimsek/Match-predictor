@@ -1,4 +1,4 @@
-FROM python:3.13-alpine
+FROM python:3.13-slim
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "python", "server.py" ]
+CMD ["python", "server.py"]

@@ -1,0 +1,744 @@
+Date,Time,HomeTeam,AwayTeam,FTR
+11/08/2023,19:00,Trabzonspor,Antalyaspor,H
+12/08/2023,17:15,Kasimpasa,Ankaragucu,H
+12/08/2023,17:15,Konyaspor,Istanbulspor,D
+12/08/2023,19:45,Kayserispor,Galatasaray,D
+12/08/2023,19:45,Pendikspor,Hatayspor,A
+13/08/2023,17:15,Sivasspor,Samsunspor,D
+13/08/2023,19:45,Ad. Demirspor,Rizespor,H
+13/08/2023,19:45,Fenerbahce,Gaziantep,H
+14/08/2023,19:00,Alanyaspor,Buyuksehyr,H
+14/08/2023,19:00,Karagumruk,Besiktas,A
+18/08/2023,19:00,Antalyaspor,Konyaspor,D
+18/08/2023,19:00,Istanbulspor,Kayserispor,D
+19/08/2023,17:15,Rizespor,Alanyaspor,D
+19/08/2023,19:45,Galatasaray,Trabzonspor,H
+19/08/2023,19:45,Hatayspor,Kasimpasa,D
+20/08/2023,17:15,Buyuksehyr,Karagumruk,A
+20/08/2023,19:45,Besiktas,Pendikspor,D
+20/08/2023,19:45,Gaziantep,Sivasspor,A
+21/08/2023,19:00,Ankaragucu,Ad. Demirspor,D
+21/08/2023,19:00,Samsunspor,Fenerbahce,A
+25/08/2023,19:00,Konyaspor,Gaziantep,H
+26/08/2023,17:15,Kasimpasa,Pendikspor,D
+26/08/2023,17:15,Trabzonspor,Rizespor,A
+26/08/2023,19:45,Sivasspor,Antalyaspor,D
+27/08/2023,17:15,Karagumruk,Ankaragucu,D
+27/08/2023,17:15,Kayserispor,Samsunspor,H
+27/08/2023,19:45,Alanyaspor,Hatayspor,D
+01/09/2023,19:00,Kasimpasa,Trabzonspor,A
+01/09/2023,19:00,Rizespor,Karagumruk,H
+02/09/2023,17:15,Buyuksehyr,Konyaspor,A
+02/09/2023,17:15,Pendikspor,Alanyaspor,D
+02/09/2023,19:45,Antalyaspor,Kayserispor,D
+02/09/2023,19:45,Gaziantep,Galatasaray,A
+03/09/2023,17:15,Besiktas,Sivasspor,H
+03/09/2023,19:45,Ankaragucu,Fenerbahce,A
+03/09/2023,19:45,Hatayspor,Ad. Demirspor,D
+16/09/2023,15:00,Kayserispor,Gaziantep,H
+16/09/2023,15:00,Konyaspor,Rizespor,A
+16/09/2023,18:00,Ad. Demirspor,Pendikspor,H
+16/09/2023,18:00,Galatasaray,Samsunspor,H
+17/09/2023,15:00,Fenerbahce,Antalyaspor,H
+17/09/2023,15:00,Istanbulspor,Buyuksehyr,A
+17/09/2023,18:00,Alanyaspor,Kasimpasa,D
+17/09/2023,18:00,Trabzonspor,Besiktas,H
+18/09/2023,18:00,Karagumruk,Hatayspor,D
+18/09/2023,18:00,Sivasspor,Ankaragucu,A
+22/09/2023,18:00,Gaziantep,Istanbulspor,H
+23/09/2023,15:00,Pendikspor,Karagumruk,D
+23/09/2023,15:00,Rizespor,Sivasspor,D
+23/09/2023,18:00,Antalyaspor,Samsunspor,H
+23/09/2023,18:00,Buyuksehyr,Galatasaray,A
+24/09/2023,15:00,Ankaragucu,Konyaspor,D
+24/09/2023,15:00,Besiktas,Kayserispor,H
+24/09/2023,18:00,Alanyaspor,Fenerbahce,A
+24/09/2023,18:00,Kasimpasa,Ad. Demirspor,H
+25/09/2023,18:00,Hatayspor,Trabzonspor,H
+26/09/2023,18:00,Istanbulspor,Galatasaray,A
+27/09/2023,18:00,Ad. Demirspor,Besiktas,H
+28/09/2023,18:00,Fenerbahce,Buyuksehyr,H
+29/09/2023,18:00,Samsunspor,Gaziantep,A
+30/09/2023,11:30,Sivasspor,Hatayspor,D
+30/09/2023,14:00,Istanbulspor,Antalyaspor,A
+30/09/2023,14:00,Trabzonspor,Pendikspor,H
+30/09/2023,17:00,Galatasaray,Ankaragucu,H
+01/10/2023,11:30,Karagumruk,Kasimpasa,A
+01/10/2023,14:00,Fenerbahce,Rizespor,H
+01/10/2023,17:00,Ad. Demirspor,Alanyaspor,H
+01/10/2023,17:00,Konyaspor,Besiktas,A
+02/10/2023,18:00,Kayserispor,Buyuksehyr,D
+06/10/2023,18:00,Ad. Demirspor,Trabzonspor,H
+06/10/2023,18:00,Alanyaspor,Karagumruk,H
+07/10/2023,11:30,Pendikspor,Sivasspor,A
+07/10/2023,14:00,Ankaragucu,Kayserispor,H
+07/10/2023,17:00,Antalyaspor,Galatasaray,A
+07/10/2023,17:00,Buyuksehyr,Gaziantep,H
+08/10/2023,11:30,Rizespor,Samsunspor,H
+08/10/2023,14:00,Besiktas,Istanbulspor,H
+08/10/2023,17:00,Hatayspor,Konyaspor,H
+08/10/2023,17:00,Kasimpasa,Fenerbahce,A
+21/10/2023,11:30,Kayserispor,Rizespor,H
+21/10/2023,14:00,Gaziantep,Antalyaspor,H
+21/10/2023,14:00,Konyaspor,Pendikspor,A
+21/10/2023,17:00,Galatasaray,Besiktas,H
+22/10/2023,11:30,Sivasspor,Kasimpasa,A
+22/10/2023,14:00,Istanbulspor,Ankaragucu,H
+22/10/2023,17:00,Fenerbahce,Hatayspor,H
+22/10/2023,17:00,Samsunspor,Buyuksehyr,D
+23/10/2023,18:00,Karagumruk,Ad. Demirspor,H
+23/10/2023,18:00,Trabzonspor,Alanyaspor,H
+27/10/2023,18:00,Hatayspor,Kayserispor,A
+27/10/2023,18:00,Kasimpasa,Istanbulspor,H
+28/10/2023,14:00,Alanyaspor,Sivasspor,A
+28/10/2023,17:00,Ad. Demirspor,Konyaspor,H
+28/10/2023,17:00,Rizespor,Galatasaray,A
+29/10/2023,13:00,Karagumruk,Trabzonspor,D
+29/10/2023,16:00,Ankaragucu,Samsunspor,H
+29/10/2023,16:00,Antalyaspor,Buyuksehyr,H
+29/10/2023,16:00,Pendikspor,Fenerbahce,A
+30/10/2023,17:00,Besiktas,Gaziantep,H
+03/11/2023,17:00,Galatasaray,Kasimpasa,H
+04/11/2023,10:30,Istanbulspor,Pendikspor,A
+04/11/2023,13:00,Samsunspor,Hatayspor,H
+04/11/2023,16:00,Fenerbahce,Trabzonspor,A
+05/11/2023,10:30,Sivasspor,Ad. Demirspor,D
+05/11/2023,13:00,Buyuksehyr,Ankaragucu,D
+05/11/2023,13:00,Konyaspor,Karagumruk,D
+05/11/2023,16:00,Antalyaspor,Besiktas,H
+06/11/2023,17:00,Gaziantep,Rizespor,H
+06/11/2023,17:00,Kayserispor,Alanyaspor,H
+08/11/2023,17:00,Samsunspor,Istanbulspor,H
+10/11/2023,17:00,Ankaragucu,Antalyaspor,A
+10/11/2023,17:00,Trabzonspor,Konyaspor,H
+11/11/2023,10:30,Kasimpasa,Kayserispor,A
+11/11/2023,13:00,Alanyaspor,Gaziantep,A
+11/11/2023,13:00,Karagumruk,Sivasspor,H
+11/11/2023,16:00,Hatayspor,Galatasaray,H
+12/11/2023,10:30,Pendikspor,Samsunspor,H
+12/11/2023,13:00,Besiktas,Buyuksehyr,H
+12/11/2023,13:00,Rizespor,Istanbulspor,H
+12/11/2023,16:00,Ad. Demirspor,Fenerbahce,D
+25/11/2023,10:30,Istanbulspor,Hatayspor,H
+25/11/2023,13:00,Gaziantep,Ankaragucu,A
+25/11/2023,13:00,Konyaspor,Kasimpasa,H
+25/11/2023,16:00,Galatasaray,Alanyaspor,H
+26/11/2023,10:30,Kayserispor,Ad. Demirspor,D
+26/11/2023,13:00,Antalyaspor,Rizespor,D
+26/11/2023,13:00,Samsunspor,Besiktas,A
+26/11/2023,16:00,Fenerbahce,Karagumruk,H
+27/11/2023,17:00,Buyuksehyr,Pendikspor,H
+27/11/2023,17:00,Sivasspor,Trabzonspor,D
+01/12/2023,17:00,Hatayspor,Antalyaspor,D
+01/12/2023,17:00,Karagumruk,Istanbulspor,H
+02/12/2023,10:30,Alanyaspor,Konyaspor,D
+02/12/2023,13:00,Rizespor,Buyuksehyr,H
+02/12/2023,16:00,Ad. Demirspor,Samsunspor,A
+02/12/2023,16:00,Pendikspor,Galatasaray,A
+03/12/2023,10:30,Kasimpasa,Gaziantep,H
+03/12/2023,13:00,Trabzonspor,Kayserispor,A
+03/12/2023,16:00,Ankaragucu,Besiktas,D
+04/12/2023,17:00,Fenerbahce,Sivasspor,H
+08/12/2023,17:00,Galatasaray,Ad. Demirspor,H
+09/12/2023,10:30,Antalyaspor,Karagumruk,H
+09/12/2023,13:00,Samsunspor,Kasimpasa,H
+09/12/2023,16:00,Besiktas,Fenerbahce,A
+10/12/2023,10:30,Istanbulspor,Alanyaspor,A
+10/12/2023,13:00,Buyuksehyr,Hatayspor,H
+10/12/2023,13:00,Kayserispor,Pendikspor,H
+10/12/2023,16:00,Gaziantep,Trabzonspor,A
+11/12/2023,17:00,Ankaragucu,Rizespor,D
+11/12/2023,17:00,Konyaspor,Sivasspor,A
+19/12/2023,14:00,Buyuksehyr,Sivasspor,H
+19/12/2023,17:00,Gaziantep,Ad. Demirspor,D
+19/12/2023,17:00,Istanbulspor,Trabzonspor,A
+20/12/2023,14:00,Kayserispor,Fenerbahce,A
+20/12/2023,17:00,Antalyaspor,Kasimpasa,D
+20/12/2023,17:00,Galatasaray,Karagumruk,H
+21/12/2023,14:00,Rizespor,Pendikspor,H
+21/12/2023,14:00,Samsunspor,Konyaspor,D
+21/12/2023,17:00,Ankaragucu,Hatayspor,D
+21/12/2023,17:00,Besiktas,Alanyaspor,A
+23/12/2023,10:30,Sivasspor,Istanbulspor,H
+23/12/2023,13:00,Karagumruk,Gaziantep,A
+23/12/2023,16:00,Trabzonspor,Buyuksehyr,D
+24/12/2023,10:30,Konyaspor,Kayserispor,H
+24/12/2023,13:00,Ad. Demirspor,Antalyaspor,H
+24/12/2023,16:00,Fenerbahce,Galatasaray,D
+25/12/2023,14:00,Alanyaspor,Samsunspor,H
+25/12/2023,14:00,Kasimpasa,Rizespor,D
+25/12/2023,17:00,Hatayspor,Besiktas,A
+25/12/2023,17:00,Pendikspor,Ankaragucu,D
+05/01/2024,14:00,Gaziantep,Pendikspor,D
+05/01/2024,17:00,Antalyaspor,Alanyaspor,D
+05/01/2024,17:00,Besiktas,Kasimpasa,A
+06/01/2024,10:30,Rizespor,Hatayspor,H
+06/01/2024,13:00,Buyuksehyr,Ad. Demirspor,D
+06/01/2024,16:00,Ankaragucu,Trabzonspor,A
+06/01/2024,16:00,Samsunspor,Karagumruk,H
+07/01/2024,10:30,Kayserispor,Sivasspor,A
+07/01/2024,13:00,Istanbulspor,Fenerbahce,A
+07/01/2024,16:00,Galatasaray,Konyaspor,H
+09/01/2024,14:00,Alanyaspor,Ankaragucu,D
+09/01/2024,14:00,Pendikspor,Antalyaspor,A
+09/01/2024,17:00,Kasimpasa,Buyuksehyr,A
+09/01/2024,17:00,Rizespor,Besiktas,A
+10/01/2024,14:00,Hatayspor,Gaziantep,D
+10/01/2024,14:00,Karagumruk,Kayserispor,H
+10/01/2024,17:00,Ad. Demirspor,Istanbulspor,D
+10/01/2024,17:00,Fenerbahce,Konyaspor,H
+11/01/2024,14:00,Sivasspor,Galatasaray,D
+11/01/2024,17:00,Trabzonspor,Samsunspor,H
+13/01/2024,10:30,Ankaragucu,Kasimpasa,H
+13/01/2024,10:30,Hatayspor,Pendikspor,D
+13/01/2024,13:00,Buyuksehyr,Alanyaspor,H
+13/01/2024,16:00,Besiktas,Karagumruk,H
+13/01/2024,16:00,Rizespor,Ad. Demirspor,H
+14/01/2024,10:30,Istanbulspor,Konyaspor,D
+14/01/2024,13:00,Antalyaspor,Trabzonspor,D
+14/01/2024,13:00,Samsunspor,Sivasspor,H
+14/01/2024,16:00,Gaziantep,Fenerbahce,A
+15/01/2024,17:00,Galatasaray,Kayserispor,H
+20/01/2024,10:30,Kasimpasa,Hatayspor,H
+20/01/2024,13:00,Alanyaspor,Rizespor,H
+20/01/2024,13:00,Karagumruk,Buyuksehyr,D
+20/01/2024,16:00,Ad. Demirspor,Ankaragucu,D
+20/01/2024,16:00,Pendikspor,Besiktas,H
+21/01/2024,10:30,Sivasspor,Gaziantep,D
+21/01/2024,13:00,Fenerbahce,Samsunspor,D
+21/01/2024,13:00,Konyaspor,Antalyaspor,D
+21/01/2024,16:00,Trabzonspor,Galatasaray,A
+22/01/2024,17:00,Kayserispor,Istanbulspor,A
+23/01/2024,14:00,Hatayspor,Alanyaspor,D
+23/01/2024,17:00,Besiktas,Ad. Demirspor,D
+23/01/2024,17:00,Pendikspor,Kasimpasa,H
+24/01/2024,14:00,Ankaragucu,Karagumruk,H
+24/01/2024,14:00,Gaziantep,Konyaspor,D
+24/01/2024,17:00,Antalyaspor,Sivasspor,H
+24/01/2024,17:00,Buyuksehyr,Fenerbahce,A
+25/01/2024,14:00,Samsunspor,Kayserispor,H
+25/01/2024,17:00,Galatasaray,Istanbulspor,H
+25/01/2024,17:00,Rizespor,Trabzonspor,H
+27/01/2024,13:00,Alanyaspor,Pendikspor,D
+27/01/2024,16:00,Ad. Demirspor,Hatayspor,A
+28/01/2024,10:30,Konyaspor,Buyuksehyr,A
+28/01/2024,13:00,Karagumruk,Rizespor,H
+28/01/2024,13:00,Sivasspor,Besiktas,H
+28/01/2024,16:00,Fenerbahce,Ankaragucu,H
+29/01/2024,14:00,Istanbulspor,Samsunspor,D
+29/01/2024,14:00,Kayserispor,Antalyaspor,D
+29/01/2024,17:00,Galatasaray,Gaziantep,H
+29/01/2024,17:00,Trabzonspor,Kasimpasa,A
+02/02/2024,14:00,Ankaragucu,Sivasspor,D
+02/02/2024,14:00,Hatayspor,Karagumruk,H
+02/02/2024,17:00,Samsunspor,Galatasaray,A
+03/02/2024,10:30,Rizespor,Konyaspor,D
+03/02/2024,13:00,Buyuksehyr,Istanbulspor,H
+03/02/2024,16:00,Antalyaspor,Fenerbahce,A
+03/02/2024,16:00,Gaziantep,Kayserispor,D
+04/02/2024,10:30,Pendikspor,Ad. Demirspor,H
+04/02/2024,13:00,Kasimpasa,Alanyaspor,H
+04/02/2024,16:00,Besiktas,Trabzonspor,H
+09/02/2024,17:00,Ad. Demirspor,Kasimpasa,A
+10/02/2024,13:00,Karagumruk,Pendikspor,H
+10/02/2024,16:00,Galatasaray,Buyuksehyr,H
+11/02/2024,10:30,Sivasspor,Rizespor,H
+11/02/2024,13:00,Istanbulspor,Gaziantep,A
+11/02/2024,13:00,Konyaspor,Ankaragucu,H
+11/02/2024,16:00,Fenerbahce,Alanyaspor,D
+12/02/2024,14:00,Trabzonspor,Hatayspor,H
+12/02/2024,17:00,Kayserispor,Besiktas,D
+12/02/2024,17:00,Samsunspor,Antalyaspor,H
+16/02/2024,17:00,Kasimpasa,Karagumruk,D
+17/02/2024,10:30,Antalyaspor,Istanbulspor,D
+17/02/2024,13:00,Hatayspor,Sivasspor,D
+17/02/2024,16:00,Rizespor,Fenerbahce,A
+18/02/2024,10:30,Alanyaspor,Ad. Demirspor,D
+18/02/2024,13:00,Gaziantep,Samsunspor,D
+18/02/2024,13:00,Pendikspor,Trabzonspor,A
+18/02/2024,16:00,Ankaragucu,Galatasaray,A
+19/02/2024,17:00,Besiktas,Konyaspor,H
+19/02/2024,17:00,Buyuksehyr,Kayserispor,A
+23/02/2024,17:00,Samsunspor,Rizespor,H
+24/02/2024,10:30,Kayserispor,Ankaragucu,H
+24/02/2024,13:00,Gaziantep,Buyuksehyr,A
+24/02/2024,16:00,Fenerbahce,Kasimpasa,H
+24/02/2024,16:00,Konyaspor,Hatayspor,H
+25/02/2024,10:30,Sivasspor,Pendikspor,H
+25/02/2024,13:00,Karagumruk,Alanyaspor,D
+25/02/2024,13:00,Trabzonspor,Ad. Demirspor,H
+25/02/2024,16:00,Istanbulspor,Besiktas,A
+26/02/2024,17:00,Galatasaray,Antalyaspor,H
+01/03/2024,17:00,Kasimpasa,Sivasspor,D
+02/03/2024,10:30,Ankaragucu,Istanbulspor,D
+02/03/2024,13:00,Rizespor,Kayserispor,H
+02/03/2024,16:00,Hatayspor,Fenerbahce,A
+03/03/2024,10:30,Buyuksehyr,Samsunspor,H
+03/03/2024,10:30,Pendikspor,Konyaspor,A
+03/03/2024,16:00,Besiktas,Galatasaray,A
+04/03/2024,14:00,Ad. Demirspor,Karagumruk,H
+04/03/2024,17:00,Alanyaspor,Trabzonspor,H
+04/03/2024,17:00,Antalyaspor,Gaziantep,H
+08/03/2024,17:00,Galatasaray,Rizespor,H
+09/03/2024,10:30,Sivasspor,Alanyaspor,A
+09/03/2024,13:00,Konyaspor,Ad. Demirspor,D
+09/03/2024,16:00,Buyuksehyr,Antalyaspor,H
+09/03/2024,16:00,Trabzonspor,Karagumruk,H
+10/03/2024,10:30,Kayserispor,Hatayspor,D
+10/03/2024,13:00,Istanbulspor,Kasimpasa,A
+10/03/2024,13:00,Samsunspor,Ankaragucu,H
+10/03/2024,16:00,Fenerbahce,Pendikspor,H
+11/03/2024,17:30,Gaziantep,Besiktas,H
+15/03/2024,17:30,Karagumruk,Konyaspor,D
+15/03/2024,17:30,Pendikspor,Istanbulspor,H
+16/03/2024,10:30,Alanyaspor,Kayserispor,H
+16/03/2024,13:00,Ankaragucu,Buyuksehyr,H
+16/03/2024,17:30,Ad. Demirspor,Sivasspor,H
+16/03/2024,17:30,Besiktas,Antalyaspor,A
+17/03/2024,10:30,Rizespor,Gaziantep,H
+17/03/2024,13:00,Hatayspor,Samsunspor,H
+17/03/2024,13:00,Kasimpasa,Galatasaray,A
+17/03/2024,17:30,Trabzonspor,Fenerbahce,A
+02/04/2024,15:00,Istanbulspor,Rizespor,A
+02/04/2024,18:30,Antalyaspor,Ankaragucu,D
+02/04/2024,18:30,Galatasaray,Hatayspor,H
+02/04/2024,18:30,Gaziantep,Alanyaspor,A
+03/04/2024,15:00,Sivasspor,Karagumruk,H
+03/04/2024,18:30,Fenerbahce,Ad. Demirspor,H
+03/04/2024,18:30,Kayserispor,Kasimpasa,A
+03/04/2024,18:30,Konyaspor,Trabzonspor,A
+04/04/2024,18:30,Buyuksehyr,Besiktas,D
+04/04/2024,18:30,Samsunspor,Pendikspor,D
+12/04/2024,18:00,Trabzonspor,Sivasspor,A
+13/04/2024,11:30,Kasimpasa,Konyaspor,A
+13/04/2024,14:00,Ankaragucu,Gaziantep,H
+13/04/2024,17:00,Ad. Demirspor,Kayserispor,D
+13/04/2024,17:00,Besiktas,Samsunspor,D
+14/04/2024,11:30,Pendikspor,Buyuksehyr,A
+14/04/2024,14:00,Hatayspor,Istanbulspor,A
+14/04/2024,14:00,Rizespor,Antalyaspor,H
+14/04/2024,17:00,Karagumruk,Fenerbahce,A
+15/04/2024,18:00,Alanyaspor,Galatasaray,A
+19/04/2024,18:00,Besiktas,Ankaragucu,H
+20/04/2024,11:30,Istanbulspor,Karagumruk,A
+20/04/2024,14:00,Konyaspor,Alanyaspor,A
+20/04/2024,17:00,Kayserispor,Trabzonspor,A
+20/04/2024,17:00,Samsunspor,Ad. Demirspor,D
+21/04/2024,11:30,Buyuksehyr,Rizespor,H
+21/04/2024,17:00,Antalyaspor,Hatayspor,H
+21/04/2024,17:00,Galatasaray,Pendikspor,H
+21/04/2024,17:00,Gaziantep,Kasimpasa,H
+22/04/2024,18:00,Sivasspor,Fenerbahce,D
+26/04/2024,18:00,Ad. Demirspor,Galatasaray,A
+27/04/2024,14:00,Kasimpasa,Samsunspor,H
+27/04/2024,14:00,Sivasspor,Konyaspor,H
+27/04/2024,17:00,Fenerbahce,Besiktas,H
+27/04/2024,17:00,Hatayspor,Buyuksehyr,A
+28/04/2024,14:00,Alanyaspor,Istanbulspor,H
+28/04/2024,14:00,Pendikspor,Kayserispor,A
+28/04/2024,17:00,Rizespor,Ankaragucu,D
+28/04/2024,17:00,Trabzonspor,Gaziantep,H
+29/04/2024,18:00,Karagumruk,Antalyaspor,H
+03/05/2024,18:00,Ankaragucu,Alanyaspor,D
+03/05/2024,18:00,Besiktas,Rizespor,H
+04/05/2024,14:00,Istanbulspor,Ad. Demirspor,A
+04/05/2024,17:00,Kayserispor,Karagumruk,D
+04/05/2024,17:00,Samsunspor,Trabzonspor,H
+05/05/2024,14:00,Buyuksehyr,Kasimpasa,H
+05/05/2024,17:00,Galatasaray,Sivasspor,H
+05/05/2024,17:00,Gaziantep,Hatayspor,D
+06/05/2024,18:00,Antalyaspor,Pendikspor,A
+06/05/2024,18:00,Konyaspor,Fenerbahce,D
+12/05/2024,17:00,Ad. Demirspor,Gaziantep,A
+12/05/2024,17:00,Alanyaspor,Besiktas,D
+12/05/2024,17:00,Fenerbahce,Kayserispor,H
+12/05/2024,17:00,Hatayspor,Ankaragucu,H
+12/05/2024,17:00,Karagumruk,Galatasaray,A
+12/05/2024,17:00,Kasimpasa,Antalyaspor,H
+12/05/2024,17:00,Konyaspor,Samsunspor,H
+12/05/2024,17:00,Pendikspor,Rizespor,H
+12/05/2024,17:00,Sivasspor,Buyuksehyr,A
+12/05/2024,17:00,Trabzonspor,Istanbulspor,H
+17/05/2024,15:00,Istanbulspor,Sivasspor,A
+17/05/2024,18:00,Antalyaspor,Ad. Demirspor,H
+18/05/2024,17:00,Ankaragucu,Pendikspor,D
+18/05/2024,17:00,Besiktas,Hatayspor,D
+18/05/2024,17:00,Buyuksehyr,Trabzonspor,A
+18/05/2024,17:00,Gaziantep,Karagumruk,H
+18/05/2024,17:00,Kayserispor,Konyaspor,D
+18/05/2024,17:00,Rizespor,Kasimpasa,D
+18/05/2024,17:00,Samsunspor,Alanyaspor,D
+19/05/2024,17:00,Galatasaray,Fenerbahce,A
+24/05/2024,18:00,Alanyaspor,Antalyaspor,D
+25/05/2024,14:00,Karagumruk,Samsunspor,H
+25/05/2024,17:00,Sivasspor,Kayserispor,H
+26/05/2024,17:00,Ad. Demirspor,Buyuksehyr,A
+26/05/2024,17:00,Fenerbahce,Istanbulspor,H
+26/05/2024,17:00,Hatayspor,Rizespor,H
+26/05/2024,17:00,Kasimpasa,Besiktas,H
+26/05/2024,17:00,Konyaspor,Galatasaray,A
+26/05/2024,17:00,Pendikspor,Gaziantep,A
+26/05/2024,17:00,Trabzonspor,Ankaragucu,H
+09/08/2024,19:00,Galatasaray,Hatayspor,H
+10/08/2024,17:15,Kasimpasa,Konyaspor,A
+10/08/2024,19:45,Antalyaspor,Goztep,D
+10/08/2024,19:45,Fenerbahce,Ad. Demirspor,H
+11/08/2024,17:15,Sivasspor,Trabzonspor,D
+11/08/2024,19:45,Alanyaspor,Eyupspor,D
+11/08/2024,19:45,Samsunspor,Besiktas,A
+12/08/2024,19:00,Bodrumspor,Gaziantep,A
+12/08/2024,19:00,Rizespor,Buyuksehyr,D
+16/08/2024,19:00,Konyaspor,Galatasaray,A
+17/08/2024,17:15,Kayserispor,Sivasspor,A
+17/08/2024,19:45,Ad. Demirspor,Rizespor,A
+17/08/2024,19:45,Goztep,Fenerbahce,D
+18/08/2024,17:15,Buyuksehyr,Alanyaspor,H
+18/08/2024,19:45,Besiktas,Antalyaspor,H
+18/08/2024,19:45,Gaziantep,Samsunspor,A
+19/08/2024,19:00,Eyupspor,Bodrumspor,H
+19/08/2024,19:00,Hatayspor,Kasimpasa,D
+23/08/2024,19:00,Alanyaspor,Goztep,D
+24/08/2024,17:15,Sivasspor,Eyupspor,A
+24/08/2024,19:45,Bodrumspor,Konyaspor,H
+25/08/2024,17:15,Kasimpasa,Ad. Demirspor,D
+25/08/2024,19:45,Antalyaspor,Hatayspor,H
+25/08/2024,19:45,Rizespor,Fenerbahce,A
+30/08/2024,19:00,Fenerbahce,Alanyaspor,H
+31/08/2024,17:15,Konyaspor,Kayserispor,D
+31/08/2024,17:15,Rizespor,Kasimpasa,A
+31/08/2024,19:45,Ad. Demirspor,Galatasaray,A
+31/08/2024,19:45,Goztep,Bodrumspor,H
+01/09/2024,17:15,Buyuksehyr,Antalyaspor,H
+01/09/2024,17:15,Eyupspor,Trabzonspor,D
+01/09/2024,19:45,Besiktas,Sivasspor,H
+01/09/2024,19:45,Hatayspor,Samsunspor,A
+14/09/2024,15:00,Samsunspor,Konyaspor,A
+14/09/2024,15:00,Sivasspor,Gaziantep,H
+14/09/2024,18:00,Bodrumspor,Buyuksehyr,A
+14/09/2024,18:00,Galatasaray,Rizespor,H
+15/09/2024,15:00,Kasimpasa,Fenerbahce,A
+15/09/2024,15:00,Kayserispor,Eyupspor,D
+15/09/2024,18:00,Alanyaspor,Hatayspor,D
+15/09/2024,18:00,Trabzonspor,Besiktas,D
+16/09/2024,18:00,Antalyaspor,Ad. Demirspor,H
+17/09/2024,18:00,Galatasaray,Gaziantep,H
+18/09/2024,18:00,Samsunspor,Buyuksehyr,H
+19/09/2024,18:00,Trabzonspor,Kayserispor,D
+20/09/2024,18:00,Hatayspor,Bodrumspor,A
+21/09/2024,15:00,Konyaspor,Sivasspor,D
+21/09/2024,18:00,Fenerbahce,Galatasaray,A
+22/09/2024,15:00,Kasimpasa,Antalyaspor,D
+22/09/2024,15:00,Rizespor,Samsunspor,A
+22/09/2024,18:00,Ad. Demirspor,Alanyaspor,A
+22/09/2024,18:00,Besiktas,Eyupspor,H
+23/09/2024,18:00,Gaziantep,Trabzonspor,D
+23/09/2024,18:00,Goztep,Kayserispor,H
+27/09/2024,18:00,Sivasspor,Buyuksehyr,A
+28/09/2024,14:00,Samsunspor,Goztep,H
+28/09/2024,17:00,Alanyaspor,Rizespor,H
+28/09/2024,17:00,Galatasaray,Kasimpasa,D
+29/09/2024,14:00,Eyupspor,Gaziantep,H
+29/09/2024,14:00,Trabzonspor,Konyaspor,H
+29/09/2024,17:00,Antalyaspor,Fenerbahce,A
+29/09/2024,17:00,Bodrumspor,Ad. Demirspor,H
+30/09/2024,18:00,Kayserispor,Besiktas,A
+04/10/2024,18:00,Rizespor,Antalyaspor,H
+05/10/2024,11:30,Kasimpasa,Bodrumspor,D
+05/10/2024,14:00,Goztep,Sivasspor,H
+05/10/2024,17:00,Buyuksehyr,Kayserispor,D
+05/10/2024,17:00,Hatayspor,Trabzonspor,D
+06/10/2024,11:30,Konyaspor,Eyupspor,H
+06/10/2024,14:00,Ad. Demirspor,Samsunspor,A
+06/10/2024,17:00,Galatasaray,Alanyaspor,H
+06/10/2024,17:00,Gaziantep,Besiktas,D
+19/10/2024,11:30,Kayserispor,Gaziantep,D
+19/10/2024,14:00,Trabzonspor,Buyuksehyr,H
+19/10/2024,17:00,Antalyaspor,Galatasaray,A
+19/10/2024,17:00,Eyupspor,Goztep,H
+20/10/2024,11:30,Sivasspor,Hatayspor,H
+20/10/2024,14:00,Besiktas,Konyaspor,H
+20/10/2024,17:00,Alanyaspor,Kasimpasa,A
+20/10/2024,17:00,Samsunspor,Fenerbahce,D
+21/10/2024,18:00,Bodrumspor,Rizespor,A
+25/10/2024,18:00,Ad. Demirspor,Sivasspor,A
+26/10/2024,11:30,Hatayspor,Kayserispor,A
+26/10/2024,14:00,Kasimpasa,Samsunspor,A
+26/10/2024,17:00,Goztep,Trabzonspor,H
+27/10/2024,10:30,Gaziantep,Konyaspor,H
+27/10/2024,13:00,Alanyaspor,Antalyaspor,A
+27/10/2024,16:00,Fenerbahce,Bodrumspor,H
+28/10/2024,14:00,Buyuksehyr,Eyupspor,D
+28/10/2024,17:00,Galatasaray,Besiktas,H
+01/11/2024,17:00,Gaziantep,Goztep,H
+02/11/2024,10:30,Sivasspor,Rizespor,H
+02/11/2024,13:00,Kayserispor,Ad. Demirspor,D
+02/11/2024,16:00,Besiktas,Kasimpasa,A
+03/11/2024,10:30,Konyaspor,Buyuksehyr,H
+03/11/2024,13:00,Bodrumspor,Alanyaspor,D
+03/11/2024,13:00,Eyupspor,Hatayspor,H
+03/11/2024,16:00,Trabzonspor,Fenerbahce,A
+04/11/2024,17:00,Samsunspor,Antalyaspor,H
+08/11/2024,17:00,Kasimpasa,Kayserispor,A
+09/11/2024,10:30,Antalyaspor,Bodrumspor,H
+09/11/2024,13:00,Hatayspor,Gaziantep,H
+09/11/2024,16:00,Ad. Demirspor,Eyupspor,A
+09/11/2024,16:00,Rizespor,Trabzonspor,H
+10/11/2024,10:30,Goztep,Konyaspor,H
+10/11/2024,13:00,Galatasaray,Samsunspor,H
+10/11/2024,16:00,Buyuksehyr,Besiktas,D
+10/11/2024,16:00,Fenerbahce,Sivasspor,H
+23/11/2024,10:30,Eyupspor,Rizespor,A
+23/11/2024,13:00,Gaziantep,Buyuksehyr,H
+23/11/2024,13:00,Kayserispor,Fenerbahce,A
+23/11/2024,16:00,Bodrumspor,Galatasaray,A
+24/11/2024,10:30,Sivasspor,Kasimpasa,D
+24/11/2024,13:00,Konyaspor,Hatayspor,D
+24/11/2024,13:00,Samsunspor,Alanyaspor,D
+24/11/2024,16:00,Besiktas,Goztep,A
+25/11/2024,17:00,Trabzonspor,Ad. Demirspor,H
+29/11/2024,17:00,Antalyaspor,Sivasspor,H
+30/11/2024,10:30,Samsunspor,Bodrumspor,H
+30/11/2024,13:00,Ad. Demirspor,Konyaspor,A
+30/11/2024,16:00,Alanyaspor,Trabzonspor,H
+30/11/2024,16:00,Buyuksehyr,Goztep,H
+01/12/2024,13:00,Rizespor,Kayserispor,H
+01/12/2024,16:00,Galatasaray,Eyupspor,D
+02/12/2024,17:00,Fenerbahce,Gaziantep,H
+02/12/2024,17:00,Hatayspor,Besiktas,D
+06/12/2024,17:00,Trabzonspor,Kasimpasa,D
+07/12/2024,10:30,Konyaspor,Antalyaspor,D
+07/12/2024,13:00,Goztep,Ad. Demirspor,H
+07/12/2024,16:00,Besiktas,Fenerbahce,H
+08/12/2024,10:30,Eyupspor,Samsunspor,H
+08/12/2024,13:00,Kayserispor,Alanyaspor,H
+08/12/2024,13:00,Sivasspor,Galatasaray,A
+08/12/2024,16:00,Buyuksehyr,Hatayspor,H
+09/12/2024,17:00,Gaziantep,Rizespor,H
+13/12/2024,17:00,Bodrumspor,Sivasspor,H
+13/12/2024,17:00,Kasimpasa,Eyupspor,H
+14/12/2024,13:00,Rizespor,Konyaspor,D
+14/12/2024,16:00,Alanyaspor,Gaziantep,H
+15/12/2024,10:30,Hatayspor,Goztep,D
+15/12/2024,13:00,Antalyaspor,Kayserispor,H
+15/12/2024,16:00,Fenerbahce,Buyuksehyr,H
+16/12/2024,16:00,Ad. Demirspor,Besiktas,H
+16/12/2024,18:00,Galatasaray,Trabzonspor,H
+20/12/2024,17:00,Eyupspor,Fenerbahce,D
+21/12/2024,13:00,Sivasspor,Samsunspor,D
+21/12/2024,16:00,Besiktas,Alanyaspor,D
+22/12/2024,10:30,Gaziantep,Antalyaspor,H
+22/12/2024,13:00,Goztep,Rizespor,H
+22/12/2024,13:00,Kayserispor,Galatasaray,A
+22/12/2024,16:00,Trabzonspor,Bodrumspor,H
+23/12/2024,17:00,Buyuksehyr,Kasimpasa,D
+23/12/2024,17:00,Hatayspor,Ad. Demirspor,A
+03/01/2025,17:00,Alanyaspor,Konyaspor,H
+03/01/2025,17:00,Rizespor,Besiktas,D
+04/01/2025,10:30,Ad. Demirspor,Buyuksehyr,A
+04/01/2025,13:00,Antalyaspor,Eyupspor,A
+04/01/2025,16:00,Galatasaray,Goztep,H
+04/01/2025,17:00,Samsunspor,Trabzonspor,H
+05/01/2025,10:30,Kasimpasa,Gaziantep,D
+05/01/2025,13:00,Bodrumspor,Kayserispor,D
+05/01/2025,16:00,Fenerbahce,Hatayspor,H
+11/01/2025,10:30,Kayserispor,Samsunspor,A
+11/01/2025,13:00,Hatayspor,Rizespor,A
+11/01/2025,16:00,Besiktas,Bodrumspor,H
+12/01/2025,10:30,Sivasspor,Alanyaspor,D
+12/01/2025,13:00,Trabzonspor,Antalyaspor,H
+12/01/2025,16:00,Buyuksehyr,Galatasaray,A
+12/01/2025,16:00,Gaziantep,Ad. Demirspor,H
+13/01/2025,17:00,Goztep,Kasimpasa,H
+13/01/2025,17:00,Konyaspor,Fenerbahce,A
+17/01/2025,17:00,Hatayspor,Galatasaray,D
+18/01/2025,10:30,Buyuksehyr,Rizespor,H
+18/01/2025,13:00,Gaziantep,Bodrumspor,D
+18/01/2025,16:00,Besiktas,Samsunspor,D
+19/01/2025,10:30,Goztep,Antalyaspor,H
+19/01/2025,13:00,Konyaspor,Kasimpasa,D
+19/01/2025,16:00,Ad. Demirspor,Fenerbahce,A
+19/01/2025,16:00,Eyupspor,Alanyaspor,H
+20/01/2025,17:00,Trabzonspor,Sivasspor,H
+24/01/2025,17:00,Samsunspor,Gaziantep,H
+25/01/2025,10:30,Sivasspor,Kayserispor,H
+25/01/2025,13:00,Alanyaspor,Buyuksehyr,H
+25/01/2025,16:00,Galatasaray,Konyaspor,H
+26/01/2025,10:30,Rizespor,Ad. Demirspor,H
+26/01/2025,13:00,Antalyaspor,Besiktas,D
+26/01/2025,13:00,Bodrumspor,Eyupspor,A
+26/01/2025,16:00,Fenerbahce,Goztep,H
+27/01/2025,17:00,Kasimpasa,Hatayspor,H
+31/01/2025,17:00,Eyupspor,Sivasspor,H
+31/01/2025,17:00,Konyaspor,Bodrumspor,H
+01/02/2025,10:30,Hatayspor,Antalyaspor,A
+01/02/2025,13:00,Kayserispor,Trabzonspor,D
+01/02/2025,16:00,Buyuksehyr,Samsunspor,H
+02/02/2025,10:30,Ad. Demirspor,Kasimpasa,A
+02/02/2025,13:00,Goztep,Alanyaspor,A
+02/02/2025,16:00,Fenerbahce,Rizespor,H
+03/02/2025,17:00,Gaziantep,Galatasaray,A
+07/02/2025,17:00,Samsunspor,Hatayspor,H
+08/02/2025,13:00,Kayserispor,Konyaspor,H
+08/02/2025,16:00,Sivasspor,Besiktas,A
+09/02/2025,10:30,Kasimpasa,Rizespor,H
+09/02/2025,13:00,Alanyaspor,Fenerbahce,A
+09/02/2025,16:00,Antalyaspor,Buyuksehyr,D
+09/02/2025,16:00,Galatasaray,Ad. Demirspor,H
+10/02/2025,17:00,Bodrumspor,Goztep,D
+10/02/2025,17:00,Trabzonspor,Eyupspor,H
+14/02/2025,17:00,Ad. Demirspor,Antalyaspor,D
+15/02/2025,10:30,Gaziantep,Sivasspor,H
+15/02/2025,13:00,Buyuksehyr,Bodrumspor,A
+15/02/2025,16:00,Besiktas,Trabzonspor,H
+16/02/2025,10:30,Hatayspor,Alanyaspor,H
+16/02/2025,13:00,Eyupspor,Kayserispor,D
+16/02/2025,13:00,Konyaspor,Samsunspor,A
+16/02/2025,16:00,Fenerbahce,Kasimpasa,H
+17/02/2025,17:00,Rizespor,Galatasaray,A
+21/02/2025,17:00,Bodrumspor,Hatayspor,H
+21/02/2025,17:00,Eyupspor,Besiktas,A
+22/02/2025,10:30,Sivasspor,Konyaspor,D
+22/02/2025,13:00,Antalyaspor,Kasimpasa,H
+22/02/2025,16:00,Samsunspor,Rizespor,A
+23/02/2025,10:30,Kayserispor,Goztep,H
+23/02/2025,13:00,Alanyaspor,Ad. Demirspor,H
+23/02/2025,16:00,Trabzonspor,Gaziantep,H
+24/02/2025,17:00,Galatasaray,Fenerbahce,D
+01/03/2025,13:00,Ad. Demirspor,Bodrumspor,D
+01/03/2025,17:30,Besiktas,Kayserispor,H
+02/03/2025,10:30,Rizespor,Alanyaspor,H
+02/03/2025,13:00,Kasimpasa,Galatasaray,D
+02/03/2025,17:30,Fenerbahce,Antalyaspor,H
+03/03/2025,13:00,Gaziantep,Eyupspor,H
+03/03/2025,13:00,Konyaspor,Trabzonspor,H
+03/03/2025,17:30,Buyuksehyr,Sivasspor,H
+03/03/2025,17:30,Goztep,Samsunspor,D
+07/03/2025,17:30,Bodrumspor,Kasimpasa,H
+08/03/2025,10:30,Kayserispor,Buyuksehyr,H
+08/03/2025,13:00,Antalyaspor,Rizespor,H
+08/03/2025,17:30,Trabzonspor,Hatayspor,A
+09/03/2025,10:30,Sivasspor,Goztep,H
+09/03/2025,13:00,Eyupspor,Konyaspor,H
+09/03/2025,13:00,Samsunspor,Ad. Demirspor,H
+09/03/2025,17:30,Alanyaspor,Galatasaray,A
+10/03/2025,17:30,Besiktas,Gaziantep,A
+14/03/2025,17:30,Galatasaray,Antalyaspor,H
+15/03/2025,10:30,Gaziantep,Kayserispor,H
+15/03/2025,13:00,Kasimpasa,Alanyaspor,H
+15/03/2025,17:30,Buyuksehyr,Trabzonspor,A
+15/03/2025,17:30,Konyaspor,Besiktas,H
+16/03/2025,10:30,Rizespor,Bodrumspor,A
+16/03/2025,13:00,Goztep,Eyupspor,D
+16/03/2025,13:00,Hatayspor,Sivasspor,H
+16/03/2025,17:30,Fenerbahce,Samsunspor,D
+28/03/2025,13:00,Antalyaspor,Alanyaspor,H
+28/03/2025,13:00,Kayserispor,Hatayspor,H
+28/03/2025,17:30,Bodrumspor,Fenerbahce,A
+28/03/2025,17:30,Konyaspor,Gaziantep,H
+29/03/2025,10:30,Sivasspor,Ad. Demirspor,H
+29/03/2025,13:00,Samsunspor,Kasimpasa,A
+29/03/2025,13:00,Trabzonspor,Goztep,D
+29/03/2025,17:30,Besiktas,Galatasaray,H
+31/03/2025,18:00,Eyupspor,Buyuksehyr,A
+04/04/2025,18:00,Ad. Demirspor,Kayserispor,A
+05/04/2025,11:30,Rizespor,Sivasspor,D
+05/04/2025,14:00,Buyuksehyr,Konyaspor,H
+05/04/2025,17:00,Antalyaspor,Samsunspor,H
+06/04/2025,11:30,Alanyaspor,Bodrumspor,A
+06/04/2025,14:00,Hatayspor,Eyupspor,A
+06/04/2025,17:00,Fenerbahce,Trabzonspor,H
+07/04/2025,18:00,Goztep,Gaziantep,D
+07/04/2025,18:00,Kasimpasa,Besiktas,D
+11/04/2025,18:00,Samsunspor,Galatasaray,A
+12/04/2025,14:00,Konyaspor,Goztep,H
+12/04/2025,17:00,Besiktas,Buyuksehyr,A
+12/04/2025,17:00,Bodrumspor,Antalyaspor,D
+13/04/2025,14:00,Gaziantep,Hatayspor,H
+13/04/2025,14:00,Kayserispor,Kasimpasa,H
+13/04/2025,17:00,Sivasspor,Fenerbahce,A
+13/04/2025,17:00,Trabzonspor,Rizespor,H
+14/04/2025,18:00,Eyupspor,Ad. Demirspor,H
+18/04/2025,18:00,Galatasaray,Bodrumspor,H
+18/04/2025,18:00,Hatayspor,Konyaspor,A
+19/04/2025,11:30,Kasimpasa,Sivasspor,H
+19/04/2025,14:00,Ad. Demirspor,Trabzonspor,A
+19/04/2025,17:00,Goztep,Besiktas,D
+20/04/2025,11:30,Buyuksehyr,Gaziantep,H
+20/04/2025,14:00,Rizespor,Eyupspor,H
+20/04/2025,17:00,Fenerbahce,Kayserispor,D
+21/04/2025,18:00,Alanyaspor,Samsunspor,H
+25/04/2025,18:00,Besiktas,Hatayspor,H
+26/04/2025,14:00,Sivasspor,Antalyaspor,H
+26/04/2025,17:00,Bodrumspor,Samsunspor,A
+26/04/2025,17:00,Gaziantep,Fenerbahce,A
+27/04/2025,14:00,Konyaspor,Ad. Demirspor,H
+27/04/2025,14:00,Trabzonspor,Alanyaspor,H
+27/04/2025,17:00,Eyupspor,Galatasaray,A
+27/04/2025,17:00,Kayserispor,Rizespor,H
+28/04/2025,18:00,Goztep,Buyuksehyr,H
+02/05/2025,18:00,Antalyaspor,Konyaspor,H
+03/05/2025,14:00,Alanyaspor,Kayserispor,D
+03/05/2025,14:00,Rizespor,Gaziantep,H
+03/05/2025,17:00,Galatasaray,Sivasspor,H
+03/05/2025,17:00,Hatayspor,Buyuksehyr,A
+04/05/2025,14:00,Samsunspor,Eyupspor,H
+04/05/2025,17:00,Ad. Demirspor,Goztep,A
+04/05/2025,17:00,Fenerbahce,Besiktas,A
+05/05/2025,18:00,Kasimpasa,Trabzonspor,D
+09/05/2025,18:00,Buyuksehyr,Fenerbahce,A
+09/05/2025,18:00,Gaziantep,Alanyaspor,A
+10/05/2025,14:00,Eyupspor,Kasimpasa,A
+10/05/2025,14:00,Konyaspor,Rizespor,H
+10/05/2025,17:00,Trabzonspor,Galatasaray,A
+11/05/2025,14:00,Sivasspor,Bodrumspor,D
+11/05/2025,17:00,Besiktas,Ad. Demirspor,H
+11/05/2025,17:00,Goztep,Hatayspor,D
+12/05/2025,18:00,Kayserispor,Antalyaspor,H
+17/05/2025,17:00,Ad. Demirspor,Hatayspor,A
+18/05/2025,17:00,Alanyaspor,Besiktas,D
+18/05/2025,17:00,Antalyaspor,Gaziantep,D
+18/05/2025,17:00,Bodrumspor,Trabzonspor,D
+18/05/2025,17:00,Fenerbahce,Eyupspor,H
+18/05/2025,17:00,Galatasaray,Kayserispor,H
+18/05/2025,17:00,Kasimpasa,Buyuksehyr,A
+18/05/2025,17:00,Rizespor,Goztep,H
+18/05/2025,17:00,Samsunspor,Sivasspor,H
+24/05/2025,14:00,Eyupspor,Antalyaspor,H
+24/05/2025,17:00,Gaziantep,Kasimpasa,D
+24/05/2025,17:00,Goztep,Galatasaray,A
+25/05/2025,17:00,Besiktas,Rizespor,A
+25/05/2025,17:00,Buyuksehyr,Ad. Demirspor,A
+25/05/2025,17:00,Kayserispor,Bodrumspor,D
+25/05/2025,17:00,Konyaspor,Alanyaspor,A
+25/05/2025,17:00,Trabzonspor,Samsunspor,D
+26/05/2025,18:00,Hatayspor,Fenerbahce,H
+30/05/2025,18:00,Antalyaspor,Trabzonspor,A
+30/05/2025,18:00,Galatasaray,Buyuksehyr,H
+30/05/2025,18:00,Kasimpasa,Goztep,A
+31/05/2025,14:00,Fenerbahce,Konyaspor,H
+31/05/2025,14:00,Rizespor,Hatayspor,H
+31/05/2025,17:00,Ad. Demirspor,Gaziantep,D
+31/05/2025,17:00,Alanyaspor,Sivasspor,H
+01/06/2025,17:00,Bodrumspor,Besiktas,A
+01/06/2025,17:00,Samsunspor,Kayserispor,H
+08/08/2025,19:30,Gaziantep,Galatasaray,A
+09/08/2025,17:00,Samsunspor,Genclerbirligi,H
+09/08/2025,19:30,Antalyaspor,Kasimpasa,H
+10/08/2025,17:00,Rizespor,Goztep,A
+10/08/2025,19:30,Eyupspor,Konyaspor,A
+11/08/2025,19:30,Trabzonspor,Kocaelispor,H
+15/08/2025,19:30,Galatasaray,Karagumruk,H
+16/08/2025,17:00,Kocaelispor,Samsunspor,A
+16/08/2025,19:30,Alanyaspor,Rizespor,D
+16/08/2025,19:30,Goztep,Fenerbahce,D
+17/08/2025,17:00,Genclerbirligi,Antalyaspor,A
+17/08/2025,17:00,Konyaspor,Gaziantep,H
+17/08/2025,19:30,Besiktas,Eyupspor,H
+17/08/2025,19:30,Buyuksehyr,Kayserispor,D
+18/08/2025,19:30,Kasimpasa,Trabzonspor,A
+22/08/2025,19:30,Karagumruk,Goztep,A
+23/08/2025,19:30,Fenerbahce,Kocaelispor,H
+23/08/2025,19:30,Gaziantep,Genclerbirligi,H
+24/08/2025,17:00,Trabzonspor,Antalyaspor,H
+24/08/2025,19:30,Kayserispor,Galatasaray,A
+25/08/2025,17:00,Eyupspor,Alanyaspor,H
