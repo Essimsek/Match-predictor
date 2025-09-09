@@ -164,8 +164,8 @@ final_model.fit(X, y)
 
 # --- SAVE THE FINAL MODEL AND NECESSARY ASSETS ---
 # 1. Save the final trained model to a file
-model_filename = 'final_superlig_model.joblib'
-joblib.dump(final_model, model_filename)
+model_filename = 'final_superlig_model.json'
+final_model.save_model(model_filename)
 print(f"\nFinal model saved to {model_filename}")
 
 # 2. Bundle all history dictionaries into a single object for convenience
