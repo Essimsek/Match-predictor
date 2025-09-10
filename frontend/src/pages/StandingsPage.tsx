@@ -1,6 +1,7 @@
 import api from "../api/api";
 import { useQuery } from "@tanstack/react-query";
 import StandingsItem, {Standings} from "../components/StandingsItem";
+import PageHeader from "../components/PageHeader";
 
 const StandingsPage = () => {
     const { isPending, error, data: standings } = useQuery<Standings[]>({
@@ -22,13 +23,7 @@ const StandingsPage = () => {
 
     return (
         <div className="min-h-screen p-5 container mx-auto">
-        <h1 className="text-3xl font-semibold text-center mb-8 text-gray-800 dark:text-gray-100 
-                    relative pb-2
-                    after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 
-                    after:w-20 after:h-1 after:bg-gradient-to-r after:from-blue-400 after:to-transparent 
-                    after:rounded-full">
-            League Standings
-        </h1>
+            <PageHeader title="League Standings" />
             <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg 
                            bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800">
                 <div className="px-4 py-3 bg-gray-100 dark:bg-gray-800/50 border-b border-gray-200 dark:border-gray-700">
