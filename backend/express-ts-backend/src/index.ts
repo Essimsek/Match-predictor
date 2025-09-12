@@ -40,6 +40,12 @@ app.get('/api/predict', async (req: Request, res: Response) => {
     }
 });
 
+app.get('/api/fixtures', async (req: Request, res: Response) => {
+    const response = await axios.get(`${flaskBackendUrl}/api-flask/fixtures`);
+    const data = await response.data;
+    res.json(data);
+});
+
 app.listen(port, '0.0.0.0', () => {
     console.log(`Backend listening on 0.0.0.0:${port}`);
   });
