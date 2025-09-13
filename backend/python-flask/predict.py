@@ -54,3 +54,5 @@ def predict_match(home_team, away_team):
     }
     print("Prediction object:", prediction, flush=True)  # Debugging line
     return prediction
+
+predict_match("Eyupspor", "Galatasaray")

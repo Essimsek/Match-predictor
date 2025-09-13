@@ -1,6 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
+url = "https://www.transfermarkt.com.tr/super-lig/startseite/wettbewerb/TR1"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+}
+
 def get_standings() -> list:
     url = "https://www.transfermarkt.com.tr/super-lig/tabelle/wettbewerb/TR1"
     headers = {
@@ -22,42 +27,82 @@ def get_standings() -> list:
         })
     return standings
 
-def get_next_fixtures() -> list:
-    url = "https://www.transfermarkt.com.tr/super-lig/startseite/wettbewerb/TR1"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-    }
+def get_last_matches():
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    for i in range(1, 6):
+        selector = f"#spieltagtabs-{i} #spieltagsbox table.livescore"
+        table = soup.select_one(selector)
+        if table:
+            rows = table.select("tr.begegnungZeile")
+            if not rows:
+                continue
+
+            for row in rows:
+                match_id = row.get("data-id")
+                home_team = row.select_one("td.verein-heim .vereinsname a").get_text(strip=True)
+                away_team = row.select_one("td.verein-gast .vereinsname a").get_text(strip=True)
+                score = row.select_one("td.ergebnis span.matchresult")
+                score = score.get_text(strip=True) if score else "N/A"
+
+                print(match_id, home_team, score, away_team)
+
+            break
+
+def get_next_matches() -> list:
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
     fixtures = []
 
-    for row in soup.select("tr.begegnungZeile"):
-        # Date
-        date_tag = row.select_one("td.zeit span.spielzeitpunkt a")
-        date = date_tag.get_text(strip=True) if date_tag else ""
+    table = soup.select_one("#spieltagtabs-2 #spieltagsbox table.livescore")
+    if not table:
+        print("❌ Gelecek maçlar tablosu bulunamadı")
+        return []
 
-        # Kickoff time
-        kickoff_tag = row.select_one("td.ergebnis span.matchresult")
-        kickoff = kickoff_tag.get_text(strip=True) if kickoff_tag else ""
+    rows = table.select("tr.begegnungZeile")
+    for row in rows:
+        match_id = row.get("data-id")
 
-        # Home team
-        home_tag = row.select_one("td.verein-heim a[title]")
-        home = home_tag.get_text(strip=True) if home_tag else ""
-        home_logo_tag = row.select_one("td.verein-heim img")
-        home_logo = home_logo_tag["src"] if home_logo_tag else ""
+        home_team = row.select_one("td.verein-heim .vereinsname a").get_text(strip=True)
+        away_team = row.select_one("td.verein-gast .vereinsname a").get_text(strip=True)
 
-        # Away team
-        away_tag = row.select_one("td.verein-gast a[title]")
-        away = away_tag.get_text(strip=True) if away_tag else ""
-        away_logo_tag = row.select_one("td.verein-gast img")
-        away_logo = away_logo_tag["src"] if away_logo_tag else ""
+        # Maç sonucu veya saat
+        result_or_time = row.select_one("td.ergebnis span.matchresult")
+        if result_or_time:
+            text = result_or_time.get_text(strip=True)
+        else:
+            text = "TBD"
 
+        # Saat mi skor mu ayrımı
+        if ":" in text:
+            parts = text.split(":")
+            if all(p.isdigit() for p in parts):  
+                h, m = map(int, parts)
+                if 0 <= h < 24 and 0 <= m < 60:
+                    kickoff = f"{h:02d}:{m:02d}"   # saat
+                else:
+                    kickoff = "TBD"
+            else:
+                kickoff = "TBD"
+        else:
+            kickoff = "TBD"
+
+        def get_img_src(img_tag):
+            if not img_tag:
+                return None
+            return img_tag.get("src") or img_tag.get("data-src")
+
+        home_logo = get_img_src(row.select_one("td.verein-heim img"))
+        away_logo = get_img_src(row.select_one("td.verein-gast img"))
+
+        print(kickoff)
         fixtures.append({
-            "date": date,
-            "home": home,
+            "id": match_id,
+            "home": home_team,
             "home_logo": home_logo,
-            "away": away,
+            "away": away_team,
             "away_logo": away_logo,
             "kickoff": kickoff
         })
@@ -65,5 +110,5 @@ def get_next_fixtures() -> list:
     return fixtures
 
 
-
-print(get_next_fixtures())
+if __name__ == "__main__":
+    matches = get_next_matches()
