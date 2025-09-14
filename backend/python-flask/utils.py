@@ -56,9 +56,10 @@ def get_next_matches() -> list:
 
     fixtures = []
 
+    # sadece bu haftanın tablosunu al
     table = soup.select_one("#spieltagtabs-2 #spieltagsbox table.livescore")
     if not table:
-        print("❌ Gelecek maçlar tablosu bulunamadı")
+        print("❌ Bu haftanın maç tablosu bulunamadı")
         return []
 
     rows = table.select("tr.begegnungZeile")
@@ -68,26 +69,22 @@ def get_next_matches() -> list:
         home_team = row.select_one("td.verein-heim .vereinsname a").get_text(strip=True)
         away_team = row.select_one("td.verein-gast .vereinsname a").get_text(strip=True)
 
-        # Maç sonucu veya saat
         result_or_time = row.select_one("td.ergebnis span.matchresult")
-        if result_or_time:
-            text = result_or_time.get_text(strip=True)
-        else:
-            text = "TBD"
+        if not result_or_time:
+            continue
 
-        # Saat mi skor mu ayrımı
-        if ":" in text:
-            parts = text.split(":")
-            if all(p.isdigit() for p in parts):  
-                h, m = map(int, parts)
-                if 0 <= h < 24 and 0 <= m < 60:
-                    kickoff = f"{h:02d}:{m:02d}"   # saat
-                else:
-                    kickoff = "TBD"
-            else:
-                kickoff = "TBD"
+        classes = result_or_time.get("class", [])
+        text = result_or_time.get_text(strip=True)
+
+        if "finished" in classes:
+            status = "finished"
+            value = text  # skor
+        elif "live" in classes:
+            status = "live"
+            value = text  # dakika, HT vb.
         else:
-            kickoff = "TBD"
+            status = "upcoming"
+            value = text  # saat
 
         def get_img_src(img_tag):
             if not img_tag:
@@ -97,18 +94,22 @@ def get_next_matches() -> list:
         home_logo = get_img_src(row.select_one("td.verein-heim img"))
         away_logo = get_img_src(row.select_one("td.verein-gast img"))
 
-        print(kickoff)
         fixtures.append({
             "id": match_id,
             "home": home_team,
             "home_logo": home_logo,
             "away": away_team,
             "away_logo": away_logo,
-            "kickoff": kickoff
+            "status": status,
+            "value": value
         })
 
     return fixtures
 
 
+
+
 if __name__ == "__main__":
     matches = get_next_matches()
+    for i in matches:
+        print(i)
