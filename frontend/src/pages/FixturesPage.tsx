@@ -1,13 +1,14 @@
 import PageHeader from "../components/PageHeader";
 import { useQuery } from "@tanstack/react-query";
-import StandingsItem, {Standings} from "../components/StandingsItem";
+import FixtureList, {FixturesType} from "../components/FixturesList";
 import api from "../api/api";
 
+
 const FixturesPage = () => {
-    const { isPending, error, data: standings } = useQuery<Standings[]>({
-        queryKey: ['standingsData'],
+    const { isPending, error, data: fixtures } = useQuery<FixturesType[]>({
+        queryKey: ['FixturesData'],
         queryFn: async () => {
-            const response = await api.get<Standings[]>("/standings");
+            const response = await api.get<FixturesType[]>("/fixtures")
             return response.data;
         },
     });
@@ -19,11 +20,10 @@ const FixturesPage = () => {
     );
 
     if (error) return <h1 className="dark:text-white text-blue-500">Error: {error.message}</h1>;
-    console.log(standings);
     return (
         <div className="min-h-screen p-5 container mx-auto">
             <PageHeader title="League Fixtures" />
-            <button className="border-amber-950 border-2">Fetch Standings</button>
+            <FixtureList fixtures={fixtures}/>
         </div>
     );
 }

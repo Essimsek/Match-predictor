@@ -36,8 +36,9 @@ data["FTR_numerical"] = data["FTR"].map(mapping) # map the ftr to numerical valu
 #    how teams performed against each other ?
 # 3. and the last one is how they perform in home and away matches separately (last 5 home matches for home team, last 5 away matches for away team)
 
-team_form, h2h_history = {}, {} # to keep track of teams form and h2h history
-HT_form_points, AT_form_points, HT_h2h_points_5, AT_h2h_points_5 = [], [], [], [] # to store the features
+team_form, h2h_history, h2h_combined = {}, {}, {}
+HT_form_points, AT_form_points, HT_h2h_points_5, AT_h2h_points_5 = [], [], [], []
+HT_h2h_combined_5, AT_h2h_combined_5 = [], []
 
 # Overall team form last 5
 for index, row in data.iterrows():
@@ -48,27 +49,33 @@ for index, row in data.iterrows():
     past_away_form = team_form.get(away_team, [])
 
     # calculate average points in last 5 matches (3 + 1 + 0 + 3 + 3 = 10 / 5 = 2.0)
-    HT_form_points.append(sum(past_home_form[-5:]) / 5 if past_home_form else 0)
-    AT_form_points.append(sum(past_away_form[-5:]) / 5 if past_away_form else 0)
+    HT_form_points.append(sum(past_home_form[-10:]) / 10 if past_home_form else 0)
+    AT_form_points.append(sum(past_away_form[-10:]) / 10 if past_away_form else 0)
 
     # get the past h2h points
     key_home, key_away = (home_team, away_team), (away_team, home_team)
     past_home_h2h = h2h_history.get(key_home, [])
     past_away_h2h = h2h_history.get(key_away, [])
+    HT_h2h_points_5.append(sum(past_home_h2h[-5:]) / len(past_home_h2h[-5:]) if past_home_h2h else 0)
+    AT_h2h_points_5.append(sum(past_away_h2h[-5:]) / len(past_away_h2h[-5:]) if past_away_h2h else 0)
 
-    # calculate average points in last 5 h2h matches same as above
-    HT_h2h_points_5.append(sum(past_home_h2h[-5:]) / 5 if past_home_h2h else 0)
-    AT_h2h_points_5.append(sum(past_away_h2h[-5:]) / 5 if past_away_h2h else 0)
+    combined_key = tuple(sorted([home_team, away_team]))
+    past_combined_h2h = h2h_combined.get(combined_key, [])
+    HT_h2h_combined_5.append(sum(past_combined_h2h[-5:]) / len(past_combined_h2h[-5:]) if past_combined_h2h else 0)
+    AT_h2h_combined_5.append(sum(past_combined_h2h[-5:]) / len(past_combined_h2h[-5:]) if past_combined_h2h else 0)
 
     # we are adding this current matches points to the history for future matches
     team_form.setdefault(home_team, []).append(row["HomePoints"])
     team_form.setdefault(away_team, []).append(row["AwayPoints"])
     h2h_history.setdefault(key_home, []).append(row["HomePoints"])
     h2h_history.setdefault(key_away, []).append(row["AwayPoints"])
+    h2h_combined.setdefault(combined_key, []).append(row["HomePoints"])
+    h2h_combined.setdefault(combined_key, []).append(row["AwayPoints"])
 
 # add new features..
 data["HT_form_points_5"], data["AT_form_points_5"] = HT_form_points, AT_form_points
 data["HT_h2h_points_5"], data["AT_h2h_points_5"] = HT_h2h_points_5, AT_h2h_points_5
+data["HT_h2h_combined_5"], data["AT_h2h_combined_5"] = HT_h2h_combined_5, AT_h2h_combined_5
 
 # Home and Away specific form (last 5 home matches for home team, last 5 away matches for away team)
 home_history, away_history = {}, {}
@@ -96,7 +103,12 @@ data["AT_away_form_5"] = AT_away_form_5
 
 # okay now we have all the features we need
 # so we can prepare the data for the model
-features = ["HT_form_points_5", "AT_form_points_5", "HT_h2h_points_5", "AT_h2h_points_5", "HT_home_form_5", "AT_away_form_5"]
+features = [
+    "HT_form_points_5", "AT_form_points_5",
+    "HT_h2h_points_5", "AT_h2h_points_5",
+    "HT_h2h_combined_5", "AT_h2h_combined_5",
+    "HT_home_form_5", "AT_away_form_5"
+]
 X = data[features]
 y = data["FTR_numerical"]
 
@@ -172,6 +184,7 @@ print(f"\nFinal model saved to {model_filename}")
 prediction_assets = {
     'team_form_history': team_form,
     'h2h_history': h2h_history,
+    'h2h_combined': h2h_combined,
     'home_match_history': home_history,
     'away_match_history': away_history
 }
@@ -180,6 +193,7 @@ prediction_assets = {
 assets_filename = 'prediction_assets.joblib'
 joblib.dump(prediction_assets, assets_filename)
 print(f"Prediction assets saved to {assets_filename}")
+
 
 
 # convert time to a format that can be used which is decimal hour here.

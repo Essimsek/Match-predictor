@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from predict import predict_match
-from utils import get_standings, get_next_fixtures
+from utils import get_standings, get_next_matches
 
 app = Flask(__name__)
 @app.route("/api-flask/standings", methods=["GET"])
@@ -10,7 +10,7 @@ def standings():
 
 @app.route("/api-flask/fixtures", methods=["GET"])
 def fixtures():
-    fixtures = get_next_fixtures()
+    fixtures = get_next_matches()
     return jsonify(fixtures)
 
 @app.route("/api-flask/predict", methods=["GET"])

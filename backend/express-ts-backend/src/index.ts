@@ -24,8 +24,9 @@ app.get('/api/standings', async (req: Request, res: Response) => {
 });
 
 app.get('/api/predict', async (req: Request, res: Response) => {
+    setTimeout(() => {}, 2000);
     try {
-        const { home = 'Galatasaray', away = 'Fenerbahce' } = req.query;
+        const { home = 'Galatasaray', away = 'Fenerbahce' } = req.query as { home?: string; away?: string };
 
         const response = await axios.get(`${flaskBackendUrl}/api-flask/predict`, {
             params: { home, away }
