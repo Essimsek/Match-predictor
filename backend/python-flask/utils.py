@@ -31,6 +31,8 @@ def get_last_matches():
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
+    last_matches = []
+
     for i in range(1, 6):
         selector = f"#spieltagtabs-{i} #spieltagsbox table.livescore"
         table = soup.select_one(selector)
@@ -45,10 +47,24 @@ def get_last_matches():
                 away_team = row.select_one("td.verein-gast .vereinsname a").get_text(strip=True)
                 score = row.select_one("td.ergebnis span.matchresult")
                 score = score.get_text(strip=True) if score else "N/A"
+                home_score, away_score = score.split(":") if ":" in score else (None, None)
 
-                print(match_id, home_team, score, away_team)
-
+                if home_score > away_score:
+                    result = "H"
+                elif away_score > home_score:
+                    result = "A"
+                else:
+                    result = "D"
+                last_matches.append({
+                    "id": match_id,
+                    "home": home_team,
+                    "away": away_team,
+                    "home_goals": home_score,
+                    "away_goals": away_score,
+                    "FTR": result
+                })
             break
+    return last_matches
 
 def get_next_matches() -> list:
     response = requests.get(url, headers=headers)
@@ -56,7 +72,7 @@ def get_next_matches() -> list:
 
     fixtures = []
 
-    # sadece bu haftanın tablosunu al
+    # get the table for the current week
     table = soup.select_one("#spieltagtabs-2 #spieltagsbox table.livescore")
     if not table:
         print("❌ Bu haftanın maç tablosu bulunamadı")
@@ -78,13 +94,13 @@ def get_next_matches() -> list:
 
         if "finished" in classes:
             status = "finished"
-            value = text  # skor
+            value = text  # score
         elif "live" in classes:
             status = "live"
-            value = text  # dakika, HT vb.
+            value = text  # minutes
         else:
             status = "upcoming"
-            value = text  # saat
+            value = text  # hour
 
         def get_img_src(img_tag):
             if not img_tag:
@@ -107,9 +123,11 @@ def get_next_matches() -> list:
     return fixtures
 
 
-
-
 if __name__ == "__main__":
-    matches = get_next_matches()
+    #matches = get_next_matches()
+    #print("current match week:")
+    #for i in matches:
+        #print(i)
+    matches = get_last_matches()
     for i in matches:
         print(i)
