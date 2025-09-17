@@ -75,7 +75,7 @@ def get_next_matches() -> list:
     # get the table for the current week
     table = soup.select_one("#spieltagtabs-2 #spieltagsbox table.livescore")
     if not table:
-        print("❌ Bu haftanın maç tablosu bulunamadı")
+        print("Bu haftanın maç tablosu bulunamadı")
         return []
 
     rows = table.select("tr.begegnungZeile")
