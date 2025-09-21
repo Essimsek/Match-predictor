@@ -128,6 +128,6 @@ if __name__ == "__main__":
     #print("current match week:")
     #for i in matches:
         #print(i)
-    matches = get_next_matches()
+    matches = get_last_matches()
     for i in matches:
         print(i)

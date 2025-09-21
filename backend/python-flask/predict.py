@@ -3,17 +3,23 @@ import numpy as np
 from xgboost import XGBClassifier
 
 def normalize_team_name(name: str) -> str:
+    # önce küçük harfe çevir
+    name = name.strip().lower()
+
+    # Türkçe karakter dönüşümü
     replacements = {
-        "ç": "c", "Ç": "C",
-        "ğ": "g", "Ğ": "G",
-        "ı": "i", "İ": "I",
-        "ö": "o", "Ö": "O",
-        "ş": "s", "Ş": "S",
-        "ü": "u", "Ü": "U"
+        "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u"
     }
     for tr_char, en_char in replacements.items():
         name = name.replace(tr_char, en_char)
-    return name
+
+    # özel mapping (Transfermarkt <-> CSV uyumu)
+    mapping = {
+        "c. rizespor": "rizespor",
+        "gaziantep fk": "gaziantep",
+    }
+
+    return mapping.get(name, name)
 
 model = XGBClassifier()
 model.load_model('./pred-model/final_superlig_model.json')

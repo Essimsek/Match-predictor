@@ -29,6 +29,14 @@ data = data.sort_values("Date").reset_index(drop=True) # sort by date just in ca
 mapping = {"H": 1, "A": 2, "D": 0}
 data["FTR_numerical"] = data["FTR"].map(mapping) # map the ftr to numerical values so model can understand
 
+# --- DATA CLEANING (avoid mixed types in team names) ---
+# Drop rows where HomeTeam/AwayTeam are missing and ensure they are strings
+data = data.dropna(subset=["HomeTeam", "AwayTeam"]).copy()
+data["HomeTeam"] = data["HomeTeam"].astype(str).str.strip()
+data["AwayTeam"] = data["AwayTeam"].astype(str).str.strip()
+
+# Normalize team names to lowercase
+
 # --- FEATURE ENGINEERING ---
 #  We need meaningful features from raw data
 # 1. Last 5 matches, form points. Teams form in last 5 matches (average points in last 5 matches actually)
@@ -42,7 +50,8 @@ HT_h2h_combined_5, AT_h2h_combined_5 = [], []
 
 # Overall team form last 5
 for index, row in data.iterrows():
-    home_team, away_team = row["HomeTeam"], row["AwayTeam"] # we get the teams
+    # ensure team names are strings
+    home_team, away_team = str(row["HomeTeam"]), str(row["AwayTeam"]) # we get the teams
     
     # get the past form points
     past_home_form = team_form.get(home_team, [])
@@ -59,7 +68,8 @@ for index, row in data.iterrows():
     HT_h2h_points_5.append(sum(past_home_h2h[-5:]) / len(past_home_h2h[-5:]) if past_home_h2h else 0)
     AT_h2h_points_5.append(sum(past_away_h2h[-5:]) / len(past_away_h2h[-5:]) if past_away_h2h else 0)
 
-    combined_key = tuple(sorted([home_team, away_team]))
+    # Use case-insensitive sort to create a stable combined key (avoid type comparison issues)
+    combined_key = tuple(sorted([home_team, away_team], key=lambda x: x.lower()))
     past_combined_h2h = h2h_combined.get(combined_key, [])
     HT_h2h_combined_5.append(sum(past_combined_h2h[-5:]) / len(past_combined_h2h[-5:]) if past_combined_h2h else 0)
     AT_h2h_combined_5.append(sum(past_combined_h2h[-5:]) / len(past_combined_h2h[-5:]) if past_combined_h2h else 0)
