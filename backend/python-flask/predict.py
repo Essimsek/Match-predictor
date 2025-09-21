@@ -3,22 +3,17 @@ import numpy as np
 from xgboost import XGBClassifier
 
 def normalize_team_name(name: str) -> str:
-    # önce küçük harfe çevir
     name = name.strip().lower()
 
-    # Türkçe karakter dönüşümü
     replacements = {
         "ç": "c", "ğ": "g", "ı": "i", "ö": "o", "ş": "s", "ü": "u"
     }
     for tr_char, en_char in replacements.items():
         name = name.replace(tr_char, en_char)
-
-    # özel mapping (Transfermarkt <-> CSV uyumu)
     mapping = {
         "c. rizespor": "rizespor",
         "gaziantep fk": "gaziantep",
     }
-
     return mapping.get(name, name)
 
 model = XGBClassifier()
@@ -67,11 +62,14 @@ def prepare_match_features(home_team, away_team):
 # --- FUNCTION TO MAKE PREDICTION ---
 def predict_match(home_team, away_team):
     # no turkish characters
+    print(f"before norimize: {home_team} vs {away_team}", flush=True)
     home_team = normalize_team_name(home_team)
     away_team = normalize_team_name(away_team)
+
     features = prepare_match_features(home_team, away_team)
     pred = model.predict(features)[0]
     probs = model.predict_proba(features)
+    print(f"Normilized names: {home_team} vs {away_team}", flush=True)
 
     mapping_inv = {1: "Home Win (H)", 2: "Away Win (A)", 0: "Draw (D)"}
     predicted_outcome = mapping_inv[pred]
@@ -86,5 +84,5 @@ def predict_match(home_team, away_team):
             "away_win": float(probs[0][2]),
         }
     }
-    print("Prediction object:", prediction, flush=True)  # Debugging line
+    print("Prediction object:", prediction, flush=True)
     return prediction

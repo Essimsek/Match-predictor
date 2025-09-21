@@ -36,6 +36,8 @@ data["HomeTeam"] = data["HomeTeam"].astype(str).str.strip()
 data["AwayTeam"] = data["AwayTeam"].astype(str).str.strip()
 
 # Normalize team names to lowercase
+data["HomeTeam"] = data["HomeTeam"].apply(lambda x: x.lower())
+data["AwayTeam"] = data["AwayTeam"].apply(lambda x: x.lower())
 
 # --- FEATURE ENGINEERING ---
 #  We need meaningful features from raw data
