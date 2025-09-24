@@ -5,13 +5,13 @@ import cors from "cors";
 
 dotenv.config();
 
-const flaskBackendUrl = process.env.FLASK_BACKEND_URL;
+const flaskBackendUrl = process.env.FLASK_BACKEND_URL
 const app = express();
 const port = 3000;
 app.use(cors({
     origin: [
-      process.env.ALLOWED_ORIGIN
-      //'http://frontend:5173',
+      'http://frontend:5173',
+      process.env.ALLOWED_ORIGIN,
     ],
     credentials: true
   }));
@@ -20,6 +20,8 @@ app.use(cors({
 app.get('/api/standings', async (req: Request, res: Response) => {
     const response = await axios.get (`${flaskBackendUrl}/api-flask/standings`);
     const data = await response.data;
+    console.log("Url: ", flaskBackendUrl);
+    console.log("Standings data: ", data);
     res.json(data);
 });
 
