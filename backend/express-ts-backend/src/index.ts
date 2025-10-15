@@ -5,13 +5,13 @@ import cors from "cors";
 
 dotenv.config();
 
-const flaskBackendUrl = process.env.FLASK_BACKEND_URL;
+const flaskBackendUrl = process.env.FLASK_BACKEND_URL
 const app = express();
 const port = 3000;
 app.use(cors({
     origin: [
-      process.env.ALLOWED_ORIGIN
-      //'http://frontend:5173',
+      'http://frontend:5173',
+      process.env.ALLOWED_ORIGIN,
     ],
     credentials: true
   }));

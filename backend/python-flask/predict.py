@@ -67,7 +67,6 @@ def predict_match(home_team, away_team):
     features = prepare_match_features(home_team, away_team)
     pred = model.predict(features)[0]
     probs = model.predict_proba(features)
-    print(f"Normilized names: {home_team} vs {away_team}", flush=True)
 
     mapping_inv = {1: "Home Win (H)", 2: "Away Win (A)", 0: "Draw (D)"}
     predicted_outcome = mapping_inv[pred]
@@ -82,5 +81,5 @@ def predict_match(home_team, away_team):
             "away_win": float(probs[0][2]),
         }
     }
-    print("Prediction object:", prediction, flush=True)
+    
     return prediction

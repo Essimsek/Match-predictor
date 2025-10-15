@@ -122,12 +122,15 @@ def get_next_matches() -> list:
 
     return fixtures
 
-
-if __name__ == "__main__":
-    #matches = get_next_matches()
-    #print("current match week:")
+#if __name__ == "__main__":
+    ##matches = get_next_matches()
+    ##print("current match week:")
+    ##for i in matches:
+        ##print(i)
+    #matches = get_last_matches()
+    #standings = get_standings()
+    #print("standings:")
+    #for i in standings:
+        #print(i)
     #for i in matches:
         #print(i)
-    matches = get_last_matches()
-    for i in matches:
-        print(i)
