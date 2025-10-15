@@ -58,10 +58,8 @@ def prepare_match_features(home_team, away_team):
     # Return the features in the correct order for the model
     return np.array([[ht_form, at_form, ht_h2h, at_h2h, ht_h2h_combined, at_h2h_combined, ht_home_form, at_away_form]])
 
-
-# --- FUNCTION TO MAKE PREDICTION ---
 def predict_match(home_team, away_team):
-    # no turkish characters
+
     print(f"before norimize: {home_team} vs {away_team}", flush=True)
     home_team = normalize_team_name(home_team)
     away_team = normalize_team_name(away_team)
